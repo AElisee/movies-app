@@ -1,0 +1,138 @@
+.home {
+  position: relative;
+  padding-bottom: 50px;
+
+  .feactures {
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px;
+
+    .container {
+      width: 100%;
+
+      .search-container {
+        position: relative;
+        width: 40%;
+        min-width: 320px;
+        margin: 0 auto;
+        border-radius: 12px;
+        text-align: center;
+        overflow: hidden;
+
+
+        input {
+          padding: 15px 30px;
+          width: 100%;
+          border-radius: inherit;
+          outline: none;
+          border: none;
+          color: black;
+
+          @media screen and (max-width: 768px) {
+            padding: 10px 25px;
+          }
+
+
+          &::placeholder {
+            color: #838383;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 500;
+
+            @media screen and (max-width: 768px) {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        span {
+          padding: 0;
+          position: absolute;
+          right: 35px;
+          color: black;
+          top: 50%;
+          transform: translateY(-50%);
+
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .sort-container {
+        width: 200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 45% 10% 45%;
+        margin: 50px auto 10px;
+        border: none;
+        // border-radius: 10px;
+        overflow: hidden;
+
+        label {
+          cursor: pointer;
+          transition: 0.4s ease;
+
+          &:hover {
+            color: rgb(255, 210, 62);
+          }
+        }
+
+        input[type="radio"] {
+          display: none;
+
+        }
+
+        input[type="radio"]:checked+label {
+          transform: scale(1.1);
+          color: rgb(255, 210, 62);
+          font-weight: 500;
+
+        }
+
+        span {
+          font-size: 1.2rem;
+          text-align: center;
+        }
+
+        .top,
+        .flop {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          padding: 0 10px;
+
+
+          &:active {
+            font-weight: 100;
+          }
+
+          &:hover {
+            // background: $blue1;
+          }
+        }
+
+        .top {
+          justify-content: flex-end;
+        }
+
+        .flop {
+          padding-left: 15px;
+          justify-content: start;
+        }
+      }
+    }
+  }
+
+  .movie-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,26 @@
+$blue1 : rgb(34, 32, 66);
+$blue2 : rgb(6, 13, 44);
+$blue3: rgb(84, 111, 228);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background: $blue1;
+  font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}

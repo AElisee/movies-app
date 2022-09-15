@@ -1,0 +1,27 @@
+.navigation {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+
+    .nav-active {
+      background: $blue3;
+    }
+
+    a {
+      min-width: max-content;
+      padding: 7px 15px;
+      margin: 5px;
+      border-radius: 10px;
+      text-align: center;
+
+      li {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
